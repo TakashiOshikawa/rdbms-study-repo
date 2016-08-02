@@ -291,7 +291,7 @@ RBDの論理設計ではこの正規化が最も重要
 
 users
 
-| id          | name           | language     |
+| *id          | name           | language     |
 |:-----------:|:--------------:|:------------:|
 | A0001       | kai            |     Ruby     |
 | A0002       | kohama         |     Java     |
@@ -311,7 +311,7 @@ users
 
 非正規形のテーブル
 
-| id          | name           | language     |
+| *id          | name           | language     |
 |:-----------:|:--------------:|:------------:|
 | A0001       | kai            | Python, Ruby |
 | A0002       | kohama         | Java, JS     |
@@ -334,7 +334,7 @@ languageが複数あるなら複数入るようにカラムを追加すれば…
 languageカラムがlanguage1とlanguage2になっている
 <br>
 
-| id          | name           | language1  |language2  |
+| *id          | name           | language1  |language2  |
 |:-----------:|:--------------:|:----------:|:---------:|
 | A0001       | kai            | Python     | Ruby      |
 | A0002       | kohama         | Java       | JS        |
@@ -378,7 +378,7 @@ class: middle, center
 
 ### その1の問題点
 
-| id          | name           | language1  |language2  |
+| *id          | name           | language1  |language2  |
 |:-----------:|:--------------:|:----------:|:---------:|
 | A0001       | kai            | Python     | Ruby      |
 | A0002       | kohama         | Java       | JS        |
@@ -455,7 +455,7 @@ idとnameの複合プライマリキーを設定しようとした場合、結�
 
 --------- users ---------
 
-| user_id     | name           |
+| *user_id     | name           |
 |:-----------:|:--------------:|
 | A0001       | kai            |
 | A0002       | kohama         |
@@ -464,7 +464,7 @@ idとnameの複合プライマリキーを設定しようとした場合、結�
 
 --------- favorite_languages ---------
 
-| user_id     | language     |
+| *user_id     | *language     |
 |:-----------:|:------------:|
 | A0001       | Python       |
 | A0001       | Ruby         |
@@ -544,7 +544,7 @@ X = 5<br>
 
 先ほどの非正規系のテーブルで関数従属性を確認してみる
 
-| id          | name           | language     |
+| *id          | name           | language     |
 |:-----------:|:--------------:|:------------:|
 | A0001       | kai            | Python, Ruby |
 | A0002       | kohama         | Java, JS     |
@@ -722,8 +722,6 @@ playersテーブル
 |T0002      |10               |Philippe Coutinho|24    |P02           |midfielder      |
 
 これで全ての列がプライマリキーに完全関数従属することになった
-
---
 
 ---
 
