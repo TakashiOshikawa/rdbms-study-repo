@@ -924,6 +924,13 @@ positionsテーブルに分割することにより、それぞれのテーブ�
 話そうと思ったけどやめました
 
 ---
+class: url-font
+
+## 今日使うスライドのURL
+
+# https:// takashioshikawa.github.io/rdbms-study-repo/slide-play.html
+
+---
 
 ## 論理設計とパフォーマンスの話
 ## 設計のアンチパターン
